@@ -53,9 +53,6 @@ Finally, the mid-RT second stage network can be trained:
 
 - `CUDA_VISIBLE_DEVICES=X nnUNetv2_train 31 3d_fullres_masked_oversampler [0,1,2,3,4,all] -p nnUNetResEncUNetMPlans_24Gb_masked_oversampler`
 
-<br/>
-<br/>
-
 ## Inference
 In [workdir](workdir) we also provide the setup to infer from the trained models. 
 
