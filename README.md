@@ -56,11 +56,11 @@ Finally, the mid-RT second stage network can be trained:
 ## Inference
 In [workdir](workdir) we also provide the setup to infer from the trained models. 
 
-For the pre-RT task, first the [checkpoint](https://google_drive_link) needs to be downloaded and moved to [work_dir/nnUNet_trained_models/Dataset030/nnUNetTrainer__nnUNetResEncUNetMPlans_24Gb__3d_fullres/fold_all](work_dir/nnUNet_trained_models/Dataset030/nnUNetTrainer__nnUNetResEncUNetMPlans_24Gb__3d_fullres/fold_all) before running inference with:
+For the pre-RT task, first the [checkpoint](https://google_drive_link) needs to be downloaded and moved to [workdir/nnUNet_trained_models/Dataset030/nnUNetTrainer__nnUNetResEncUNetMPlans_24Gb__3d_fullres/fold_all](workdir/nnUNet_trained_models/Dataset030/nnUNetTrainer__nnUNetResEncUNetMPlans_24Gb__3d_fullres/fold_all) before running inference with:
 
 - `CUDA_VISIBLE_DEVICES=X nnUNetv2_predict -i path/to/input_mris -o path/to/seg_resualts -d 30 -c 3d_fullres -p nnUNetResEncUNetMPlans_24Gb -f all`
 
-Similar, for the mid-RT, the final [checkpoint](https://google_drive_link) needs to be downloaded and moved to [work_dir/nnUNet_trained_models/Dataset031/nnUNetResEncUNetMPlans_24Gb_masked_oversampler__3d_fullres_oversample/fold_all](work_dir/nnUNet_trained_models/Dataset031/nnUNetResEncUNetMPlans_24Gb_masked_oversampler__3d_fullres_oversample/fold_all) before running inference with:
+Similar, for the mid-RT, the final [checkpoint](https://google_drive_link) needs to be downloaded and moved to [workdir/nnUNet_trained_models/Dataset031/nnUNetResEncUNetMPlans_24Gb_masked_oversampler__3d_fullres_oversample/fold_all](workdir/nnUNet_trained_models/Dataset031/nnUNetResEncUNetMPlans_24Gb_masked_oversampler__3d_fullres_oversample/fold_all) before running inference with:
 
 - `CUDA_VISIBLE_DEVICES=X nnUNetv2_predict -i path/to/input_mris -o path/to/seg_resualts -d 31 -c 3d_fullres_oversample -p nnUNetResEncUNetMPlans_24Gbb_masked_oversampler -f all`
 
