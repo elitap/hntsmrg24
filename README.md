@@ -5,7 +5,11 @@ Elias Tappiner, Christian Gapp, Martin Welk and Rainer Schuber (2024) CNNs to th
 
 The repository basically follows the official [nnU-Net repo](https://github.com/MIC-DKFZ/nnUNet/tree/v2.4.2) with a few adaptation to guide the patch sampling based on an additional input channel.
 
-Start with setting environmentvariables and creating the dataset folder as described in the installation instruction of the nnU-Net repository.
+First make sure Torch is installed and able to access your GPUs.
+Next install our Version of the nnU-Net
+`pip install -e nnunet`
+
+Set up [environmentvariables](https://github.com/MIC-DKFZ/nnUNet/blob/v2.4.2/documentation/set_environment_variables.md) and create the dataset folder as described in the [installation instruction](https://github.com/MIC-DKFZ/nnUNet/blob/v2.4.2/documentation/dataset_format.md) of the nnU-Net repository.
 
 ## Training
 The nnU-Net configuration and training for the pre-RT task can be run as follows (assuming the hntsmrg dataset id is 030):
