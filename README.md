@@ -7,7 +7,7 @@ The repository basically follows the official [nnU-Net repo](https://github.com/
 
 First make sure Torch is installed and able to access your GPUs.
 Next install our Version of the nnU-Net
-`pip install -e nnunet`
+`pip install -e .`
 
 Set up [environmentvariables](https://github.com/MIC-DKFZ/nnUNet/blob/v2.4.2/documentation/set_environment_variables.md) and create the dataset folder as described in the [installation instruction](https://github.com/MIC-DKFZ/nnUNet/blob/v2.4.2/documentation/dataset_format.md) of the nnU-Net repository.
 
